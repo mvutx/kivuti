@@ -12,6 +12,18 @@
                 transition: 3s;
                 animation-delay: inherit;
             }
+            /* Prevent any hover effect on the logo */
+nav a img {
+    transform: none !important;     /* no transform on hover */
+    opacity: 1 !important;           /* no fade / opacity change */
+    transition: none !important;     /* no animation */
+}
+
+/* Make sure hover does nothing */
+nav a:hover img {
+    transform: none !important;
+    opacity: 1 !important;
+}
             
  * {
   margin: 0;
