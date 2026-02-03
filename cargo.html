@@ -12,6 +12,88 @@
                 transition: 3s;
                 animation-delay: inherit;
             }
+            
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.newsletter-footer {
+  background: #fff;
+  padding: 50px 80px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  width: 50%;
+}
+
+.footer-left h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #555;
+  max-width: 500px;
+}
+
+.footer-right {
+  width: 40%;
+}
+
+.footer-right .label {
+  font-size: 12px;
+  color: #777;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-right label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-right input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aaa;
+  margin-bottom: 15px;
+}
+
+.footer-right button {
+  background: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.footer-right button:hover {
+  background: #333;
+}
+
+.privacy-text {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.privacy-text a {
+  color: #000;
+  text-decoration: underline;
+}
     </style>
 </head>
 <body>
@@ -116,5 +198,49 @@
                   <span class="badge bg-danger">Available</span> 
                 </div>
               </section>
+              
+  <footer class="newsletter-footer">
+    <div class="footer-container">
+
+      <!-- Left section -->
+      <div class="footer-left">
+        <h2>Never miss a thing</h2>
+        <p>
+          Sign up for promotions, tailored new arrivals, stock updates and more – straight to your inbox
+        </p>
+        <img src="images/cortezlogo.jpg" alt=""><br>
+        
+        
+      </div>
+      <!-- center section -->
+       <div class="footer-center">
+        <span class="label text-dark">Footer Menu</span><br>
+        <a href="indexcortez.html">Home</a><br>
+        <a href="hoodies.html">Hoodies</a><br>
+        <a href="truckers.html">Truckers</a><br>
+        <a href="jackets.html">Jackets</a><br>
+        <a href="cargo.html">Cargo</a><br>
+        <a href="accessory.html">Accessories</a><br>
+        <span class="label text-muted">Usefull links</span><br>
+        <a href="aboutus.html">About us</a><br>
+        <a href="Privacypolicy.html" >Privacy Privacypolicy</a><br>
+        <a href="https://cortezsuk.com">Cortez.com</a>
+       </div>
+
+      <!-- Right section -->
+      <div class="footer-right">
+        <span class="label">GET UPDATES BY</span>
+        <label>Email</label>
+
+        <input type="email" placeholder="Your email address">
+        <button>Sign Up</button>
+
+        <p class="privacy-text">
+          By signing up, you consent to receiving marketing by email and/or SMS and acknowledge you have read our
+          <a href="privacypolicy.html">Privacy Policy</a>. Unsubscribe anytime at the bottom of our emails or by replying STOP to any of our SMS.
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
